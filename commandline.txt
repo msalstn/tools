@@ -1,0 +1,21 @@
+## This contains handy command line for easy copy/paste
+
+## Print only unique lines from command history
+
+history | awk '{$1=""; print}' | sort | uniq -u | grep *search_string*
+
+## Awk command to print entire line of a record containing the string *search_string*
+## In the example below, awk is searching the file "FILENAME.txt". The output of another
+## command could be piped into this
+
+awk '/*search_string*/{print $0}' FILENAME.txt
+
+## print entire line of a record when a selected field contains a certain search option
+## In the example below, awk will print every line were the 2nd field matches *search1*
+
+awk '$2~/*search1*/{print $0} 
+
+## Boolean and/or (&&/||) can be used for multiple match options in awk
+
+
+
