@@ -1,0 +1,6 @@
+cd ~/Desktop/Sites/myWebsite
+git init
+git add *
+git commit -m 'Start of new project'
+git remote add origin ssh://username@xxx.xxx.xxx.xxx:xxxx/www/.../httpdocs.git
+git push origin master
